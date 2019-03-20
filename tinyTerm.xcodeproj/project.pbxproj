@@ -7,12 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1126F4E42241D7E5002F9122 /* HotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1126F4E32241D7E5002F9122 /* HotKey.framework */; };
+		1126F4E52241D7E5002F9122 /* HotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1126F4E32241D7E5002F9122 /* HotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1126F4E92241D80D002F9122 /* HotKey.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1126F4E82241D80D002F9122 /* HotKey.framework.dSYM */; };
+		1126F4EB2241D859002F9122 /* InteractiveProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F4EA2241D859002F9122 /* InteractiveProcess.swift */; };
+		1126F4ED2241D860002F9122 /* PopOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1126F4EC2241D860002F9122 /* PopOverViewController.xib */; };
 		113A67152241D6B100F7D064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A67142241D6B100F7D064 /* AppDelegate.swift */; };
 		113A67172241D6B200F7D064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A67162241D6B200F7D064 /* Assets.xcassets */; };
 		113A671A2241D6B200F7D064 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A67182241D6B200F7D064 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1126F4E62241D7E5002F9122 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1126F4E52241D7E5002F9122 /* HotKey.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126F4E72241D7F7002F9122 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1126F4E92241D80D002F9122 /* HotKey.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1126F4E32241D7E5002F9122 /* HotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HotKey.framework; path = Carthage/Build/Mac/HotKey.framework; sourceTree = "<group>"; };
+		1126F4E82241D80D002F9122 /* HotKey.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = HotKey.framework.dSYM; path = Carthage/Build/Mac/HotKey.framework.dSYM; sourceTree = "<group>"; };
+		1126F4EA2241D859002F9122 /* InteractiveProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveProcess.swift; sourceTree = "<group>"; };
+		1126F4EC2241D860002F9122 /* PopOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopOverViewController.xib; sourceTree = "<group>"; };
 		113A67112241D6B100F7D064 /* tinyTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinyTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A67142241D6B100F7D064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		113A67162241D6B200F7D064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1126F4E42241D7E5002F9122 /* HotKey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +69,8 @@
 		113A67082241D6B100F7D064 = {
 			isa = PBXGroup;
 			children = (
+				1126F4E82241D80D002F9122 /* HotKey.framework.dSYM */,
+				1126F4E32241D7E5002F9122 /* HotKey.framework */,
 				113A67132241D6B100F7D064 /* tinyTerm */,
 				113A67122241D6B100F7D064 /* Products */,
 			);
@@ -52,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				113A67142241D6B100F7D064 /* AppDelegate.swift */,
+				1126F4EC2241D860002F9122 /* PopOverViewController.xib */,
+				1126F4EA2241D859002F9122 /* InteractiveProcess.swift */,
 				113A67162241D6B200F7D064 /* Assets.xcassets */,
 				113A67182241D6B200F7D064 /* MainMenu.xib */,
 				113A671B2241D6B200F7D064 /* Info.plist */,
@@ -70,6 +108,8 @@
 				113A670D2241D6B100F7D064 /* Sources */,
 				113A670E2241D6B100F7D064 /* Frameworks */,
 				113A670F2241D6B100F7D064 /* Resources */,
+				1126F4E62241D7E5002F9122 /* Embed Frameworks */,
+				1126F4E72241D7F7002F9122 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -118,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1126F4ED2241D860002F9122 /* PopOverViewController.xib in Resources */,
 				113A67172241D6B200F7D064 /* Assets.xcassets in Resources */,
 				113A671A2241D6B200F7D064 /* MainMenu.xib in Resources */,
 			);
@@ -130,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1126F4EB2241D859002F9122 /* InteractiveProcess.swift in Sources */,
 				113A67152241D6B100F7D064 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +313,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5C98TMWV22;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = tinyTerm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +336,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5C98TMWV22;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = tinyTerm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
